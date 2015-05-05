@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="Keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="Description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}>-<{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+
+<{$xoops_module_header}>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+
+<!-- menus du haut -->
+<link rel="stylesheet" href="<{$xoops_url}>/themes/<{$xoops_theme}>/menu/menu.css">
+<script language="JavaScript" src="<{$xoops_url}>/themes/<{$xoops_theme}>/menu/menu.js"></script>
+<script language="JavaScript" src="<{$xoops_url}>/themes/<{$xoops_theme}>/menu/menu_alain.js"></script>
+<script language="JavaScript" src="<{$xoops_url}>/themes/<{$xoops_theme}>/menu/menu_tpl.js"></script>
+
+</head>
+
+<body>
+<div align="center" id="obCenter">
+  <table align="center" cellspacing="0" id="obLayout">
+    <tr>
+      <td rowspan="5" id="obSHL" ><img src="<{$xoops_imageurl}>/images/1px.gif" width="17" height="1" alt="" /></td>
+      <td id="obR1" ></td>
+      <td rowspan="5" id="obSHR" ><img src="<{$xoops_imageurl}>/images/1px.gif" width="17" height="1" alt="" /></td>
+    </tr>
+    <tr>
+      <td id="obHead">
+          <table cellspacing="0px">
+          <tr>
+            <td width="80px"><a href="<{$xoops_url}>/"><img src="<{$xoops_url}>/modules/news/images/topics/ligue.gif" alt="<{$xoops_sitename}>" width="80px" height="80px" border="0px" /></a></td>
+<!-- Alain
+            <td width="203" rowspan="2"><img src="<{$xoops_imageurl}>/images/he2.jpg" alt="" width="203" height="106" /></td>
+            <td id="obLog" ><{if $xoops_isuser}><img src="<{$xoops_imageurl}>/images/hwr.png" width="16" height="7" alt="" />&nbsp;<a href="<{$xoops_url}>/user.php?op=logout">LOGOUT</a>&nbsp;&nbsp;<img src="<{$xoops_imageurl}>/images/hwr.png" width="16" height="7" alt="" />&nbsp;<a href="<{$xoops_url}>/user.php">ACCOUNT</a><{else}><img src="<{$xoops_imageurl}>/images/hwr.png" width="16" height="7" alt="" />&nbsp;<a href="<{$xoops_url}>/user.php">LOGIN</a>&nbsp;&nbsp;<img src="<{$xoops_imageurl}>/images/hwr.png" width="16" height="7" alt="" />&nbsp;<a href="<{$xoops_url}>/register.php">REGISTER</a><{/if}><br />
+              <span class="obUname" ><{$xoops_uname}></span></td>
+-->
+            <td style="text-align:center; vertical-align:middle;"><{$xoops_footer}><br /><{$xoops_banner}></td>
+            <td style="width:290px; text-align:right; vertical-align:top;">
+                     <div class="ffvb">
+                          <form style="margin-top: 0px; margin-bottom: 0px;" action="<{$xoops_url}>/search.php" method="get">
+                                <a href="http://www.volley.asso.fr/" target="_blank"><img align="middle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/logo_ffvb.gif" alt="FFVB" width="66px" height="18px" border="0px"/></a> <a href="http://www.cev.lu/" target="_blank"><img align="middle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/logo_cev.gif" alt="CEV" border="0px" /></a> <a href="http://www.fivb.org/" target="_blank"><img align="middle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/logo_fivb.gif" alt="FIVB" border="0px" /></a>&nbsp;
+                                <input type="text" name="query" size="12" />
+                                <input type="hidden" name="action" value="results" />
+                                <input type="image" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/recherche.gif" alt="Rechercher un mot-clé" />&nbsp;
+                                <!-- <input type="submit" value="Cherche" /> -->
+                          </form>
+                     </div>
+            <{if $xoops_isuser}>
+                     <div class="mp">
+                          <{if $nbrepm!=0}>
+                               <a href="<{$xoops_url}>/viewpmsg.php"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/mp_oui.gif" alt="Vous avez <{$nbrepm}> message<{if $nbrepm > 1}>s<{else}><{/if}>" border="0px" /></a>
+                          <{else}>
+                               <img src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/mp_non_blank.jpg" alt="fffff" /><a href="<{$xoops_url}>/viewpmsg.php"><img align="absmiddle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/mp_non.gif" alt="Pas de nouveau message" width="22px" height="22px" border="0px" /></a>
+                          <{/if}>
+                          <a href="<{$xoops_url}>/user.php"><img align="absmiddle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/compte.gif" alt="Editez votre compte, <{$xoops_uname}>" width="22px" height="22px" border="0px" /></a>
+                          <{if $xoops_isadmin == 1}>
+                               <a href="<{$xoops_url}>/admin.php"><img align="absmiddle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/admin.gif" alt="Menu Administration" width="22px" height="22px" border="0px" /></a>
+                          <{/if}>
+                          <a href="<{$xoops_url}>/user.php?op=logout"><img align="absmiddle" src="<{$xoops_url}>/themes/<{$xoops_theme}>/images/deconnexion.gif" alt="Se déconnecter" width="22px" height="22px" border="0px" /></a>&nbsp;
+                     </div>
+            <{else}>
+                     <hr />
+                     <div class="login">
+                          <form style="margin-top: 2px; margin-bottom: 0px" action="<{$xoops_url}>/user.php" method="post">
+                                &nbsp;<input name="uname" type="text" value="Votre pseudo ici" size="16" /> Pass. <input name="pass" type="password" size="6" /> <input name="submit" type="submit" value="Connexion" />&nbsp;<br />
+                                <input type="hidden" name="op" value="login" />
+                                <a href="<{$xoops_url}>/register.php">S'inscrire</a>&nbsp;
+                          </form>
+                     </div>
+            <{/if}>
+            </td>
+          </tr>
+          </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <table id="obNav" cellspacing="0px">
+          <tr>
+<!--        <td class="obNavWidth" style="width:200px; height:23px"><br /></td>
+            <td><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td width="22" ><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td class="obNavWidth" ><a href="<{$xoops_url}>/modules/mydownloads/">DOWNLOADS</a></td>
+            <td width="22" ><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td class="obNavWidth" ><a href="<{$xoops_url}>/modules/tinycontent/" >THEMES</a></td>
+            <td width="22" ><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td class="obNavWidth" ><a href="<{$xoops_url}>/modules/news/">NEWS</a></td>
+            <td width="22" ><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td class="obNavWidth" ><a href="<{$xoops_url}>/modules/contact/">CONTACT</a></td>
+            <td width="300" class="obNavWidth" >&nbsp;</td>
+            <td width="22" ><img src="<{$xoops_imageurl}>/images/na_l.png" alt="" /></td>
+            <td class="obNavWidth" ><a href="#">HELP?</a></td>
+
+-->
+            <td style="vertical-align:middle">&nbsp;<a href="<{$xoops_url}>"><img align="absmiddle" src="<{$xoops_url}>/lravb/images/home_ico_16.gif" alt="Accueil" border="0px" /> Accueil</a></td>
+            <td class="obNavWidth" style="height:23px"></a><script language="JavaScript">new menu (MENU_ITEMS, MENU_POS);</script><br /></td>
+          </tr>
+          </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <table id="obMn" cellspacing="0px">
+          <tr>
+            <td id="leftcolumn" >
+                <!-- Start left blocks loop -->
+                <{foreach item=block from=$xoops_lblocks}>
+                          <{include file="lravb2/obblock_l.html"}>
+                <{/foreach}>
+                <br />
+                <img src="<{$xoops_imageurl}>/images/1px.gif" class="obSpacer" alt="" border="0px" />
+                <!-- End left blocks loop -->
+            </td>
+            <td id="centercolumn" >
+                <!-- Start main center colomn -->
+                <{if $xoops_showcblock == 1}>
+                     <table cellspacing="0px">
+                     <tr>
+                         <td id="centerCcolumn" colspan="2">
+                              <!-- Start center-center blocks loop -->
+                              <{foreach item=block from=$xoops_ccblocks}>
+                                        <{include file="lravb2/obblock_c.html"}>
+                              <{/foreach}>
+                              <!-- End center-center blocks loop -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td id="centerLcolumn">
+                              <!-- Start center-left blocks loop -->
+                              <{foreach item=block from=$xoops_clblocks}>
+                                        <{include file="lravb2/obblock_c.html"}>
+                              <{/foreach}>
+                              <!-- End center-left blocks loop -->
+                         </td>
+                         <td id="centerRcolumn">
+                             <!-- Start center-right blocks loop -->
+                             <{foreach item=block from=$xoops_crblocks}>
+                                       <{include file="lravb2/obblock_c.html"}>
+                             <{/foreach}>
+                             <!-- End center-right blocks loop -->
+                         </td>
+                     </tr>
+                     </table>
+                <{/if}>
+                <!-- Start main center colomn -->
+                <div id="content"><{$xoops_contents}></div>
+                <table cellspacing="0px">
+                <tr>
+                  <td id="obBanner"><{$xoops_banner}></td>
+                </tr>
+                </table>
+            </td>
+            <{if $xoops_showrblock == 1}>
+                 <td id="rightcolumn" >
+                     <{foreach item=block from=$xoops_rblocks}>
+                               <{include file="lravb2/obblock_l.html"}>
+                     <{/foreach}>
+                     <br />
+                     <img src="<{$xoops_imageurl}>/images/1px.gif" class="obSpacer" alt="" border="0px" />
+                 </td>
+            <{/if}>
+          </tr>
+          </table>
+      </td>
+  </tr>
+  <tr>
+      <td id="obFooter"><{$xoops_footer}><br />Administration du site : <a href="mailto:webmaster@rhonealpes-volley.fr">Webmaster</a> - Design issu du thème <a href='http://astonthemes.com/modules/tinycontent/index.php?id=1' target="_blank">Obscene</a> - CMS : <a href="http://frxoops.org" target="_blank">Xoops</a></td>
+  </tr>
+  <tr>
+     <td id="obLBC" >&nbsp;</td>
+     <td id="obSHB" >&nbsp;</td>
+     <td id="obRBC" >&nbsp;</td>
+  </tr>
+  </table>
+</div>
+</body>
+</html>
